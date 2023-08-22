@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Color</title>
+        <style>
+            table{
+                min-width: 200px;
+                padding: 10px;
+              }
+
+            .primary_color{
+                border-radius: 50%;
+                height: 25px;
+                width: 25px;
+                border: none;
+                outline: none;
+                -webkit-appearance: none;
+            }
+            
+            .primary_color::-webkit-color-swatch-wrapper {
+                padding: 0; 
+            }
+            .primary_color::-webkit-color-swatch {
+                border: none;
+                border-radius: 50%;
+            }
+
+        </style>
+           <!-- field-radio -->
+    </head>
+    <body>
+        <table>
+            <tbody>
+              <tr>
+                <td>Base</td>
+                <td><input type="color" id="--v-stud-base" class="primary_color"></td>
+              </tr>
+              <tr>
+                <td>Lighten5</td>
+                <td><input type="color" id="--v-stud-lighten5" class="primary_color"></td>
+              </tr>
+              <tr>
+                <td>Lighten4</td>
+                <td><input type="color" id="--v-stud-lighten4" class="primary_color"></td>
+              </tr>
+              <tr>
+                <td>Lighten3</td>
+                <td><input type="color" id="--v-stud-lighten3" class="primary_color"></td>
+              </tr>
+              <tr>
+                <td>Lighten2</td>
+                <td><input type="color" id="--v-stud-lighten2" class="primary_color"></td>
+              </tr>
+              <tr>
+                <td>Lighten1</td>
+                <td><input type="color" id="--v-stud-lighten1" class="primary_color"></td>
+              </tr>
+              
+              <!-- <tr>
+                <td>Background</td>
+                <td>
+                  <select id="theme_select">
+                  <option value="dark">Dark Theme</option>
+                  <option value="light">Light Theme</option>
+                  </select>
+             </td>
+              </tr>
+              -->
+            </tbody>
+          </table>
+          <script src="popup.js"></script>
+        <!-- <script src="scripts/main.js"></script> -->
+    </body>
+</html>
