@@ -3,72 +3,65 @@
     <head>
         <title>Color</title>
         <style>
-            table{
-                min-width: 200px;
-                padding: 10px;
-              }
+          @import url("https://fonts.googleapis.com/css?family=Raleway");
 
-            .primary_color{
-                border-radius: 50%;
-                height: 25px;
-                width: 25px;
-                border: none;
-                outline: none;
-                -webkit-appearance: none;
-            }
+          *{
+            font-family: 'Raleway', serif;
+            font-size: 25px;
+          }
+          
+          table{
+            padding: 10px;
+            border: 1vmin solid;
+          }
+          td{
+            padding: 15px;
+          }
+          input[type="color"] {
+            -webkit-appearance: none;
+            border: none;
+            width: 32px;
+            height: 32px;
+          }
+          input[type="color"]::-webkit-color-swatch-wrapper {
+            padding: 0;
             
-            .primary_color::-webkit-color-swatch-wrapper {
-                padding: 0; 
-            }
-            .primary_color::-webkit-color-swatch {
-                border: none;
-                border-radius: 50%;
-            }
-
+          }
+          input[type="color"]::-webkit-color-swatch {
+            border: none;
+            border-radius: 5px;
+          }
         </style>
-           <!-- field-radio -->
     </head>
     <body>
-        <table>
+          <table>
             <tbody>
               <tr>
                 <td>Base</td>
-                <td><input type="color" id="--v-stud-base" class="primary_color"></td>
+                <td><input id="--v-stud-base" type="color"></td>
               </tr>
               <tr>
                 <td>Lighten5</td>
-                <td><input type="color" id="--v-stud-lighten5" class="primary_color"></td>
+                <td><input id="--v-stud-lighten5" type="color"></td>
               </tr>
               <tr>
                 <td>Lighten4</td>
-                <td><input type="color" id="--v-stud-lighten4" class="primary_color"></td>
+                <td><input  id="--v-stud-lighten4" type="color"></td>
               </tr>
               <tr>
                 <td>Lighten3</td>
-                <td><input type="color" id="--v-stud-lighten3" class="primary_color"></td>
+                <td><input id="--v-stud-lighten3" type="color"></td>
               </tr>
               <tr>
                 <td>Lighten2</td>
-                <td><input type="color" id="--v-stud-lighten2" class="primary_color"></td>
+                <td><input id="--v-stud-lighten2" type="color"></td>
               </tr>
               <tr>
                 <td>Lighten1</td>
-                <td><input type="color" id="--v-stud-lighten1" class="primary_color"></td>
-              </tr>
-              
-              <!-- <tr>
-                <td>Background</td>
-                <td>
-                  <select id="theme_select">
-                  <option value="dark">Dark Theme</option>
-                  <option value="light">Light Theme</option>
-                  </select>
-             </td>
-              </tr>
-              -->
+                <td><input id="--v-stud-lighten1" type="color"></td>
+              </tr>    
             </tbody>
           </table>
           <script src="popup.js"></script>
-        <!-- <script src="scripts/main.js"></script> -->
     </body>
 </html>

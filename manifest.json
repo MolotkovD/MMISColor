@@ -12,13 +12,13 @@
   "action": {
     "default_popup":"popup/popup.html"
 },
-"permissions": ["scripting", "activeTab", "storage", "declarativeContent"],
+"permissions": ["scripting", "activeTab", "storage", "tabs"],
 "background": {
   "service_worker": "background/background.js"
 },
 "content_scripts": [
     {
-      "js": ["m.js"],
+      "js": ["SettUpRules.js"],
       "matches": ["https://mmis-web.rudn-sochi.ru/WebApp/*"]
     }
   ],
